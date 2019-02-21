@@ -1,0 +1,193 @@
+body{
+    margin:0;
+    padding:0;
+    background: black;
+}
+
+
+.main_container {
+    background: url(img/background.jpg);
+    background-position-y: -320px;
+    width: 100%;
+    height: 1010px;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+.wave1, .wave2, .wave3, .wave4, .wave5, .wave6, .wave7, .cloud, .lighthouse{
+    position: absolute;
+}
+
+.wave1{
+    bottom: 290px;
+    left: -70px;
+}
+
+.wave2{
+    bottom: 240px;
+    left: 0px;
+}
+
+.wave3{
+     bottom: 220px;
+}
+
+.wave4{
+     bottom: 120px;
+}
+
+.wave5{
+     bottom: 100px;
+}
+
+.wave6{
+    bottom: -30px;
+    left: -200px;
+    -webkit-animation: wave6 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave6 3s infinite; /* Fx 5+ */
+    -o-animation:      wave6 3s infinite; /* Opera 12+ */
+    animation:         wave6 3s infinite; /* IE 10+, Fx 29+ */
+}
+
+.wave7{
+    bottom: -40px;
+    left: -300px; 
+    -webkit-animation: wave7 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave7 3s infinite; /* Fx 5+ */
+    -o-animation:      wave7 3s infinite; /* Opera 12+ */
+    animation:         wave7 3s infinite; /* IE 10+, Fx 29+ */
+}
+
+.cloud{
+    top:0px;
+    left:0%;
+    -webkit-animation: cloud1 3s infinite; /* Safari 4+ */
+    -moz-animation:    cloud1 3s infinite; /* Fx 5+ */
+    -o-animation:      cloud1 3s infinite; /* Opera 12+ */
+    animation: cloud1 15s infinite;
+    margin-left: -30px;
+}
+
+.fish{
+    position: absolute;
+    bottom: -30px;
+    left: -407px;
+    -webkit-animation: fish 10s infinite; /* Safari 4+ */
+    -moz-animation:    fish 10s infinite; /* Fx 5+ */
+    -o-animation:      fish 10s infinite; /* Opera 12+ */
+    animation:         fish 10s infinite; /* IE 10+, Fx 29+ */ 
+}
+
+.lighthouse{
+    bottom: 210px;
+    width: 290px;
+    right: 260px;
+    transform: rotate(-9deg);
+    -webkit-animation: lighthouse 5s infinite; /* Safari 4+ */
+    -moz-animation:    lighthouse 5s infinite; /* Fx 5+ */
+    -o-animation:      lighthouse 5s infinite; /* Opera 12+ */
+    animation:         lighthouse 5s infinite; /* IE 10+, Fx 29+ */       
+}
+
+.light_orange{
+    position: absolute;
+    bottom: 200px;
+    right: 830px;
+}
+
+.light_pink{
+    position: absolute;
+    bottom: 200px;
+    right: 480px;
+}
+
+/*
+
+    Animation characters
+
+*/
+
+@-webkit-keyframes cloud1 {
+  0%   { left: 0% }
+  100% { left: 100% }
+}
+
+@-webkit-keyframes lighthouse {
+  0%   { transform: rotate(-9deg) }
+  50%  { transform: rotate(9deg)}    
+  100% { transform: rotate(-9deg) }
+}
+
+@-webkit-keyframes fish {
+  0%   { 
+         bottom: -30px;
+         left: -10%; 
+       }
+  15%   { 
+         bottom: 120px;
+         left: 10%; 
+       }    
+  25% { bottom: -30px;
+        left:30%;}
+  50%  { bottom: 120px;
+        left:60%;}  
+  75%  { bottom: -30px;
+        left:85%;}    
+  100% { bottom: -40px;
+        left: 100%; }
+}
+
+
+/*
+
+Wave animation
+
+*/
+
+@-webkit-keyframes wave6 {
+  0%   { 
+        bottom: -30px;
+        left: -200px; 
+       }
+    
+  25% { 
+        bottom: 60px;
+        left:-150px;}
+    
+  50%  { 
+        bottom: -15px;
+        left:-15px;}
+    
+    70% {
+        bottom: -70px;
+        left: -150px;
+    }
+    
+  100% {  
+        bottom: -30px;
+        left: -200px;
+    }
+}
+
+@-webkit-keyframes wave7 {
+  0%   { 
+          bottom: -10px;
+    left: -300px; 
+       }
+    
+  25% { bottom: 20px;
+        left:-150px;}
+    
+  50%  { bottom: -30px;
+        left:-15px;}
+    
+    70% {
+        bottom: -70px;
+        left: -150px;
+    }
+    
+  100% {  bottom: -10px;
+    left: -300px; }
+
+}
