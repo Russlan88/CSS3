@@ -15,30 +15,50 @@ body{
     overflow: hidden;
 }
 
-.wave1, .wave2, .wave3, .wave4, .wave5, .wave6, .wave7, .cloud, .lighthouse{
+.wave1, .wave2, .wave3, .wave4, .wave5, .wave6, .wave7, .cloud, .fishman, .lighthouse{
     position: absolute;
 }
 
 .wave1{
     bottom: 290px;
     left: -70px;
+    -webkit-animation: wave1 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave1 3s infinite; /* Fx 5+ */
+    -o-animation:      wave1 3s infinite; /* Opera 12+ */
+    animation:         wave1 3s infinite; /* IE 10+, Fx 29+ */
 }
 
 .wave2{
     bottom: 240px;
     left: 0px;
+    -webkit-animation: wave2 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave2 3s infinite; /* Fx 5+ */
+    -o-animation:      wave2 3s infinite; /* Opera 12+ */
+    animation:         wave2 3s infinite; /* IE 10+, Fx 29+ */
 }
 
 .wave3{
      bottom: 220px;
+    -webkit-animation: wave3 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave3 3s infinite; /* Fx 5+ */
+    -o-animation:      wave3 3s infinite; /* Opera 12+ */
+    animation:         wave3 3s infinite; /* IE 10+, Fx 29+ */
 }
 
 .wave4{
      bottom: 120px;
+    -webkit-animation: wave4 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave4 3s infinite; /* Fx 5+ */
+    -o-animation:      wave4 3s infinite; /* Opera 12+ */
+    animation:         wave4 3s infinite; /* IE 10+, Fx 29+ */
 }
 
 .wave5{
      bottom: 100px;
+    -webkit-animation: wave5 3s infinite; /* Safari 4+ */
+    -moz-animation:    wave5 3s infinite; /* Fx 5+ */
+    -o-animation:      wave5 3s infinite; /* Opera 12+ */
+    animation:         wave5 3s infinite; /* IE 10+, Fx 29+ */
 }
 
 .wave6{
@@ -77,6 +97,18 @@ body{
     -moz-animation:    fish 10s infinite; /* Fx 5+ */
     -o-animation:      fish 10s infinite; /* Opera 12+ */
     animation:         fish 10s infinite; /* IE 10+, Fx 29+ */ 
+}
+
+.fishman{
+    width: 20%;
+    bottom: 180px;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    left: 350px;
+    -webkit-animation: fishman 10s infinite; /* Safari 4+ */
+    -moz-animation:    fishman 10s infinite; /* Fx 5+ */
+    -o-animation:      fishman 10s infinite; /* Opera 12+ */
+    animation:         fishman 10s infinite; /* IE 10+, Fx 29+ */ 
 }
 
 .lighthouse{
@@ -138,12 +170,176 @@ body{
         left: 100%; }
 }
 
+@-webkit-keyframes fishman {
+    0%   { 
+        bottom: 180px;
+        left: 190px;
+     }
+  
+    25% { 
+        bottom: 230px;
+        left: 210px;
+    }
+    
+    50%  { 
+        bottom: 240px;
+        left: 200px;
+    }
+    
+    70% {
+        bottom: 180px;
+        left: 190px;
+    }
+
+    80% {
+        bottom: 180px;
+        left: 180px;
+    }
+
+    90% {
+        bottom: 160px;
+        left: 170px;
+    }
+    
+    100% {  
+        bottom: 180px;
+        left: 190px;
+     }
+  }
+
 
 /*
 
 Wave animation
 
 */
+
+
+@-webkit-keyframes wave1 {
+  0%   { 
+        bottom: -30px;
+        left: -200px; 
+       }
+    
+  25% { 
+        bottom: 60px;
+        left:-150px;}
+    
+  50%  { 
+        bottom: -15px;
+        left:-15px;}
+    
+    70% {
+        bottom: -70px;
+        left: -150px;
+    }
+    
+  100% {  
+        bottom: -30px;
+        left: -200px;
+    }
+}
+
+@-webkit-keyframes wave2 {
+  0%   { 
+        bottom: -30px;
+        left: -200px;
+       }
+    
+  25% { 
+        bottom: 60px;
+        left:-220px;}
+    
+  50%  { 
+        bottom: -15px;
+        left:-15px;}
+    
+    70% {
+        bottom: -640px;
+        left: -300px;
+    }
+    
+  100% {  
+        bottom: -30px;
+        left: -200px;
+    }
+}
+
+@-webkit-keyframes wave3 {
+  0%   { 
+        bottom: -30px;
+        left: -200px; 
+       }
+    
+  25% { 
+        bottom: 60px;
+        left:-150px;}
+    
+  50%  { 
+        bottom: -15px;
+        left:-15px;}
+    
+    70% {
+        bottom: -70px;
+        left: -150px;
+    }
+    
+  100% {  
+        bottom: -30px;
+        left: -200px;
+    }
+}
+
+@-webkit-keyframes wave4 {
+  0%   { 
+        bottom: -30px;
+        left: -200px; 
+       }
+    
+  25% { 
+        bottom: 60px;
+        left:-150px;}
+    
+  50%  { 
+        bottom: -15px;
+        left:-15px;}
+    
+    70% {
+        bottom: -70px;
+        left: -150px;
+    }
+    
+  100% {  
+        bottom: -30px;
+        left: -200px;
+    }
+}
+
+
+@-webkit-keyframes wave5 {
+  0%   { 
+        bottom: -30px;
+        left: -200px; 
+       }
+    
+  25% { 
+        bottom: 60px;
+        left:-150px;}
+    
+  50%  { 
+        bottom: -15px;
+        left:-15px;}
+    
+    70% {
+        bottom: -70px;
+        left: -150px;
+    }
+    
+  100% {  
+        bottom: -30px;
+        left: -200px;
+    }
+}
 
 @-webkit-keyframes wave6 {
   0%   { 
