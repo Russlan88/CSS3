@@ -46,7 +46,9 @@ body{
 }
 
 .wave4{
-     bottom: 120px;
+    bottom: 5px;
+    width: 2500px;
+    height: 310px;
     -webkit-animation: wave4 3s infinite; /* Safari 4+ */
     -moz-animation:    wave4 3s infinite; /* Fx 5+ */
     -o-animation:      wave4 3s infinite; /* Opera 12+ */
@@ -72,7 +74,7 @@ body{
 
 .wave7{
     bottom: -40px;
-    left: -300px; 
+    left: -390px; 
     -webkit-animation: wave7 3s infinite; /* Safari 4+ */
     -moz-animation:    wave7 3s infinite; /* Fx 5+ */
     -o-animation:      wave7 3s infinite; /* Opera 12+ */
@@ -91,12 +93,16 @@ body{
 
 .fish{
     position: absolute;
-    bottom: -30px;
+    bottom: -50px;
     left: -407px;
-    -webkit-animation: fish 10s infinite; /* Safari 4+ */
-    -moz-animation:    fish 10s infinite; /* Fx 5+ */
-    -o-animation:      fish 10s infinite; /* Opera 12+ */
-    animation:         fish 10s infinite; /* IE 10+, Fx 29+ */ 
+    -webkit-animation: fish 10s ease-in-out infinite; /* Safari 4+ */
+    -moz-animation:    fish 10s ease-in-out infinite; /* Fx 5+ */
+    -o-animation:      fish 10s ease-in-out infinite; /* Opera 12+ */
+    animation:         fish 10s ease-in-out infinite; /* IE 10+, Fx 29+ */ 
+    animation-delay: 7s;
+    -webkit-animation-delay: 7s; /* Safari 4.0 - 8.0 */
+    -moz-animation-delay: 7s;
+    -o-animation-delay: 7s;
 }
 
 .fishman{
@@ -105,21 +111,21 @@ body{
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1);
     left: 350px;
-    -webkit-animation: fishman 10s infinite; /* Safari 4+ */
-    -moz-animation:    fishman 10s infinite; /* Fx 5+ */
-    -o-animation:      fishman 10s infinite; /* Opera 12+ */
-    animation:         fishman 10s infinite; /* IE 10+, Fx 29+ */ 
+    -webkit-animation: fishman 10s ease-in-out infinite; /* Safari 4+ */
+    -moz-animation:    fishman 10s ease-in-out infinite; /* Fx 5+ */
+    -o-animation:      fishman 10s ease-in-out infinite; /* Opera 12+ */
+    animation:         fishman 10s ease-in-out infinite; /* IE 10+, Fx 29+ */ 
 }
 
 .lighthouse{
-    bottom: 210px;
+    bottom: 150px;
     width: 290px;
     right: 260px;
     transform: rotate(-9deg);
-    -webkit-animation: lighthouse 5s infinite; /* Safari 4+ */
-    -moz-animation:    lighthouse 5s infinite; /* Fx 5+ */
-    -o-animation:      lighthouse 5s infinite; /* Opera 12+ */
-    animation:         lighthouse 5s infinite; /* IE 10+, Fx 29+ */       
+    -webkit-animation: lighthouse 5s ease-in-out infinite; /* Safari 4+ */
+    -moz-animation:    lighthouse 5s ease-in-out infinite; /* Fx 5+ */
+    -o-animation:      lighthouse 5s ease-in-out infinite; /* Opera 12+ */
+    animation:         lighthouse 5s ease-in-out infinite; /* IE 10+, Fx 29+ */       
 }
 
 .light_orange{
@@ -152,59 +158,63 @@ body{
 }
 
 @-webkit-keyframes fish {
-  0%   { 
-         bottom: -30px;
-         left: -10%; 
-       }
-  15%   { 
-         bottom: 120px;
-         left: 10%; 
-       }    
-  25% { bottom: -30px;
-        left:30%;}
-  50%  { bottom: 120px;
-        left:60%;}  
-  75%  { bottom: -30px;
-        left:85%;}    
-  100% { bottom: -40px;
-        left: 100%; }
+    
+    0% {
+        bottom: -50px;
+        left: -10%;
+    }
+    15% {
+        bottom: 70px;
+        left: 10%;
+    }
+    25% {
+        bottom: -80px;
+        left: 30%;
+    }
+    50% {
+        bottom: 50px;
+        left: 60%;
+    }
+    75% {
+        bottom: -60px;
+        left: 85%;
+    }
+    100% {
+        bottom: -50px;
+        left: 100%;
+    }
 }
 
 @-webkit-keyframes fishman {
-    0%   { 
-        bottom: 180px;
-        left: 190px;
-     }
-  
-    25% { 
-        bottom: 230px;
-        left: 210px;
-    }
     
-    50%  { 
-        bottom: 240px;
-        left: 200px;
+    0% {
+        bottom: 220px;
+        left: 420px;
     }
-    
+    25% {
+        bottom: 200px;
+        left: 370px;
+    }
+    50% {
+        bottom: 210px;
+        left: 410px;
+    }
     70% {
-        bottom: 180px;
-        left: 190px;
+        bottom: 170px;
+        left: 370px;
     }
-
     80% {
-        bottom: 180px;
-        left: 180px;
+        bottom: 225px;
+        left: 470px;
     }
-
     90% {
-        bottom: 160px;
-        left: 170px;
-    }
-    
-    100% {  
         bottom: 180px;
-        left: 190px;
-     }
+        left: 560px;
+    }
+    100% {
+        bottom: 220px;
+        left: 420px;
+    }
   }
 
 
@@ -266,124 +276,131 @@ Wave animation
 }
 
 @-webkit-keyframes wave3 {
-  0%   { 
-        bottom: -30px;
-        left: -200px; 
-       }
-    
-  25% { 
-        bottom: 60px;
-        left:-150px;}
-    
-  50%  { 
-        bottom: -15px;
-        left:-15px;}
-    
-    70% {
-        bottom: -70px;
-        left: -150px;
+  
+    0% {
+        bottom: 70px;
+        left: -30px;
     }
-    
-  100% {  
-        bottom: -30px;
-        left: -200px;
+    25% {
+        bottom: 150px;
+        left: -130px;
+    }
+    50% {
+        bottom: 210px;
+        left: -45px;
+    }
+    70% {
+        bottom: 10px;
+        left: -80px;
+    }
+    100% {
+        bottom: 70px;
+        left: -30px;
     }
 }
 
 @-webkit-keyframes wave4 {
-  0%   { 
-        bottom: -30px;
-        left: -200px; 
+
+    0%   { 
+        bottom: -40px;
+        left: -390px; 
        }
     
   25% { 
-        bottom: 60px;
-        left:-150px;}
+        bottom: 20px;
+        left:-150px;
+    }
     
   50%  { 
-        bottom: -15px;
-        left:-15px;}
+        bottom: -30px;
+        left:-15px;
+    }
     
     70% {
-        bottom: -70px;
+        bottom: -120px;
         left: -150px;
     }
     
   100% {  
-        bottom: -30px;
-        left: -200px;
-    }
+        bottom: -40px;
+        left: -390px; }
 }
 
 
 @-webkit-keyframes wave5 {
-  0%   { 
-        bottom: -30px;
-        left: -200px; 
-       }
-    
-  25% { 
-        bottom: 60px;
-        left:-150px;}
-    
-  50%  { 
-        bottom: -15px;
-        left:-15px;}
-    
-    70% {
-        bottom: -70px;
-        left: -150px;
+    0% {
+        bottom: 5px;
+        left: -65px;
     }
-    
-  100% {  
-        bottom: -30px;
-        left: -200px;
+    25% {
+        bottom: 70px;
+        left: -210px;
+    }
+    50% {
+        bottom: 90px;
+        left: -66px;
+    }
+    70% {
+        bottom: 0px;
+        left: -20px;
+    }
+    100% {
+        bottom: 5px;
+        left: -65px;
     }
 }
 
 @-webkit-keyframes wave6 {
-  0%   { 
-        bottom: -30px;
-        left: -200px; 
+ 
+    0%   { 
+        bottom: 10px;
+        left: -160px;
        }
     
   25% { 
         bottom: 60px;
-        left:-150px;}
+        left: -20px;
+}
     
   50%  { 
         bottom: -15px;
-        left:-15px;}
+        left: 5px;
+}
     
     70% {
-        bottom: -70px;
-        left: -150px;
+        bottom: -50px;
+        left: -60px;
     }
     
   100% {  
-        bottom: -30px;
-        left: -200px;
+        bottom: 10px;
+        left: -160px;
     }
 }
 
 @-webkit-keyframes wave7 {
   0%   { 
-          bottom: -10px;
-    left: -300px; 
+        bottom: -40px;
+        left: -390px; 
        }
     
-  25% { bottom: 20px;
-        left:-150px;}
+  25% { 
+        bottom: 20px;
+        left:-150px;
+    }
     
-  50%  { bottom: -30px;
-        left:-15px;}
+  50%  { 
+        bottom: -30px;
+        left:-15px;
+    }
     
     70% {
-        bottom: -70px;
+        bottom: -120px;
         left: -150px;
     }
     
-  100% {  bottom: -10px;
-    left: -300px; }
+  100% {  
+        bottom: -40px;
+        left: -390px; }
 
 }
